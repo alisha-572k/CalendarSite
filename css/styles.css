@@ -5,25 +5,37 @@ body{
 
 #title{
     background-color: #f38181;
+    overflow: hidden;
+    height: 600px;
     
 }
 
+/* Title Image */
+.title-image{
+    width: 60%;
+    transform: rotate(25deg);
+    border-radius: 11%;
+    
+}
 
-h1{
+.big-heading{
     font-family: "Suez One", serif;
     font-size: 3rem;
     line-height: 1.5;
 }
 
-h2{
+h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
+}
+
+h2{
     font-size: 3rem ;
     line-height: 1.5;
 
 }
 
 h3{
-    font-family: 'Montserrat', sans-serif;
+   font-size: 1.5rem;
 }
 
 p{
@@ -65,18 +77,11 @@ p{
     margin: 5% 3% 5% 0;
 }
 
-/* Title Image */
-.title-image{
-    width: 60%;
-    transform: rotate(25deg);
-    border-radius: 11%;
-    
-}
-
 /* Features Section */
 
 #features{
-    padding: 7% 15% ;    
+    padding: 7% 15% ;
+    /* //position: absolute;   */
 }
 
 .feature-box{
@@ -162,6 +167,7 @@ p{
 @media(max-width:1028px){
     #title{
         text-align: center;
+        height: auto;
     }
     .title-image{
         position: static;
